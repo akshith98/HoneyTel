@@ -109,10 +109,26 @@ $ sudo python3 honeytel.py
  [*] TCP serving at Port: 16993
  [*] TCP serving at Port: 23
  
-honeypot has been visited by ....
+honeypot has been visited by 10.0.0.34
 ```
 
-Log file output:
+Attacker Input;
+
+```
+$ telnet 10.0.0.34
+Trying 10.0.0.34...
+Connected to 10.0.0.34.
+Escape character is '^]'.
+Username: Password: root
+OK
+Telnet>end
+ERROR : Unrecognized command
+Telnet>logout
+Connection closed by foreign host.
+
+```
+
+Log file ```/opt/honeytel/tel.log``` output:
 
 ```
 06/05/2021 17:26:55.913 [173919] INFO: - 0.0.0.0:23 socket started..
