@@ -1,7 +1,3 @@
-# HoneyTel
-Python Telnet Honeytel
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
