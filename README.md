@@ -139,7 +139,7 @@ Log file ```/opt/honeytel/tel.log``` output:
 06/05/2021 17:27:28.459 [173919] INFO: - 10.0.0.34:54712 disconnected
 ```
 
-
+Exit Program: Ctr-C to end porgram and close all ports
 
 
 
