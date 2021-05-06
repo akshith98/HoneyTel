@@ -1,5 +1,5 @@
 # HoneyTel
-Python Telnet HoneyPot
+Python Telnet Honeytel
 
 
 <!-- PROJECT LOGO -->
@@ -8,7 +8,7 @@ Python Telnet HoneyPot
   <a href="https://github.com/akshith98/HoneyTel">
   </a>
 
-  <h3 align="center">SC-clone</h3>
+  <h3 align="center">Honeytel</h3>
 
  
 
@@ -61,7 +61,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-g++ installed or Visual Studio with C++ extention 
+Python3 
 
 ### Installation
 
@@ -70,7 +70,7 @@ g++ installed or Visual Studio with C++ extention
    git clone https://github.com/akshith98/HoneyTel.git
    ```
    
-2. Create ```/opt/honeytel/tel.log ``` file on your server
+2. Create a ```/opt/honeytel/tel.log ``` file on your server
 
 
 
@@ -81,11 +81,51 @@ Run Program As Administrator
    ```sh
    sudo python3 honeytal.py
    ```
-Output:
+Output (default ports):
+
+```
+$ sudo python3 honeytel.py
+
+ [*] UDP serving at Port: 123
+ [*] UDP serving at Port: 5060
+ [*] UDP serving at Port: 5061
+ [*] UDP serving at Port: 3478
 
 
+ [*] TCP serving at Port: 22
+ [*] TCP serving at Port: 1433
+ [*] TCP serving at Port: 8080
+ [*] TCP serving at Port: 21
+ [*] TCP serving at Port: 5060
+ [*] TCP serving at Port: 5061
+ [*] TCP serving at Port: 5900
+ [*] TCP serving at Port: 25
+ [*] TCP serving at Port: 110
+ [*] TCP serving at Port: 1723
+ [*] TCP serving at Port: 1337
+ [*] TCP serving at Port: 10000
+ [*] TCP serving at Port: 5800
+ [*] TCP serving at Port: 44443
+ [*] TCP serving at Port: 16993
+ [*] TCP serving at Port: 23
+ 
+honeypot has been visited by ....
+```
 
+Log file output:
 
+```
+06/05/2021 17:26:55.913 [173919] INFO: - 0.0.0.0:23 socket started..
+06/05/2021 17:27:09.640 [173919] INFO: - 10.0.0.34:54712 connected to proxy socket
+06/05/2021 17:27:09.640 [173919] INFO: - <built-in function id> - 10.0.0.34:54712 client username entered :  !"'# 
+06/05/2021 17:27:16.564 [173919] INFO: - <built-in function id> - 10.0.0.34:54712 client password entered : root
+ 
+06/05/2021 17:27:24.100 [173919] INFO: - <built-in function id> - 10.0.0.34:54712 client command entered : end
+ 
+06/05/2021 17:27:28.459 [173919] INFO: - <built-in function id> - 10.0.0.34:54712 client command entered : logout
+ 
+06/05/2021 17:27:28.459 [173919] INFO: - 10.0.0.34:54712 disconnected
+```
 
 
 
