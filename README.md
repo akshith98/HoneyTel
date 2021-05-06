@@ -108,7 +108,7 @@ $ sudo python3 honeytel.py
 honeypot has been visited by 10.0.0.34
 ```
 
-Attacker Input;
+Attacker Input:
 
 ```
 $ telnet 10.0.0.34
