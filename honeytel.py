@@ -8,7 +8,6 @@ import random
 import logging
 import datetime
 from logging import handlers
-from configobj import ConfigObj
 from socket import *
 #from socket import AF_INET, SOCK_STREAM
 from _thread import *
