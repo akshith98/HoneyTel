@@ -59,6 +59,10 @@ To get a local copy up and running follow these simple steps.
 
 Python3 
 
+### Supported OS
+
+Linux
+
 ### Installation
 
 1. Clone the repo
